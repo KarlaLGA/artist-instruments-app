@@ -8,7 +8,8 @@ import Container from '@material-ui/core/Container'
 import './App.css'
 
 import AddArtist from './components/forms/AddArtist'
-import Artist from './components/listItems/Artist'
+import AddInstrument from './components/forms/AddInstrument'
+import Artists from './components/lists/Artists'
 import Title from './components/layout/Title'
 
 const client = new ApolloClient({
@@ -21,7 +22,8 @@ const App = () => (
     <Container className='App'>
       <Title />
       <AddArtist />
-      <Artist />
+      <AddInstrument />
+      <Artists />
     </Container>
   </ApolloProvider>
 )
